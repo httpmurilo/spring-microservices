@@ -4,7 +4,7 @@ Estudos microservices
 1. Comunicação entre projetos usando Feign Client.
 2. Balanceameno de carga com Ribbon
 3. Descoberta de clientes com Eureka Server.
-
+4. Hystrix para tolerância de falhas.
 APIS : 
 
 1. Workers ( API do retorno de trabalhadores).
