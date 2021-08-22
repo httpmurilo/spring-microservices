@@ -5,6 +5,10 @@ Estudos microservices
 2. Balanceameno de carga com Ribbon
 3. Descoberta de clientes com Eureka Server.
 4. Hystrix para tolerância de falhas.
+5. Spring cloud config server como servidor de configuração
+6. Zuul como api gateway.
+
+
 APIS : 
 
 1. Workers ( API do retorno de trabalhadores).
@@ -19,6 +23,13 @@ GET : http://localhost:8001/workers/1
 
 GET : http://localhost:8101/payments/1/days/30 -- realiza chamadas na api workers.
 
+
+Apos a implementação do eureka e api gateway 
+
+GET http://localhost:8765/hr-payroll/payments/2/days/1
+GET http://localhost:8765/hr-worker/workers
+GET http://localhost:8765/hr-worker/workers/configs -- teste para validar se o carregamento de configuração está correto.
+GET http://localhost:8765/hr-worker/actuator/refresh -- recarregar novas configurações.
 
 
 Eureka Dashboard 
