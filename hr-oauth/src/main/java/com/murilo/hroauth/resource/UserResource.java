@@ -2,6 +2,8 @@ package com.murilo.hroauth.resource;
 
 import com.murilo.hroauth.Entites.User;
 import com.murilo.hroauth.services.UserService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -13,6 +15,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping(value = "/users")
 public class UserResource {
+
+    private static Logger logger = LoggerFactory.getLogger(UserService.class);
 
     @Autowired
     private UserService service;
